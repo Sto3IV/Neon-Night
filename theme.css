@@ -2801,17 +2801,19 @@ mark,
 
 
 
+
 /* --- AGGRESSIVE LIST BULLET OVERRIDES --- */
 body {
     --list-bullet-color: var(--aether-neon-cyan);
     --list-marker-color: var(--aether-neon-cyan);
+    
+    --aether-neon-mint: #65E9C7;
+    --aether-neon-mint-rgb: 101, 233, 199;
 }
 
-/* Live Preview */
+/* Live Preview Unordered Lists */
 .theme-dark .cm-formatting-list-ul,
-.theme-dark .cm-formatting-list-ol,
 .theme-dark span.cm-formatting-list.cm-formatting-list-ul,
-.theme-dark span.cm-formatting-list.cm-formatting-list-ol,
 .theme-dark .cm-list-1 .list-bullet,
 .theme-dark .cm-list-2 .list-bullet,
 .theme-dark .cm-list-3 .list-bullet {
@@ -2819,9 +2821,15 @@ body {
     text-shadow: 0 0 8px rgba(var(--aether-neon-cyan-rgb), 0.7), 0 0 16px rgba(var(--aether-neon-cyan-rgb), 0.4) !important;
 }
 
-/* Reading View */
-.theme-dark .markdown-rendered ul > li::marker,
-.theme-dark .markdown-rendered ol > li::marker {
+/* Live Preview Ordered Lists */
+.theme-dark .cm-formatting-list-ol,
+.theme-dark span.cm-formatting-list.cm-formatting-list-ol {
+    color: var(--aether-neon-mint) !important;
+    text-shadow: 0 0 8px rgba(var(--aether-neon-mint-rgb), 0.7), 0 0 16px rgba(var(--aether-neon-mint-rgb), 0.4) !important;
+}
+
+/* Reading View Unordered Lists */
+.theme-dark .markdown-rendered ul > li::marker {
     color: var(--aether-neon-cyan) !important;
     text-shadow: 0 0 8px rgba(var(--aether-neon-cyan-rgb), 0.7), 0 0 16px rgba(var(--aether-neon-cyan-rgb), 0.4) !important;
 }
@@ -2836,4 +2844,10 @@ body {
 .theme-dark .list-bullet::after {
     background-color: var(--aether-neon-cyan) !important;
     box-shadow: 0 0 8px rgba(var(--aether-neon-cyan-rgb), 0.7), 0 0 16px rgba(var(--aether-neon-cyan-rgb), 0.4) !important;
+}
+
+/* Reading View Ordered Lists */
+.theme-dark .markdown-rendered ol > li::marker {
+    color: var(--aether-neon-mint) !important;
+    text-shadow: 0 0 8px rgba(var(--aether-neon-mint-rgb), 0.7), 0 0 16px rgba(var(--aether-neon-mint-rgb), 0.4) !important;
 }
