@@ -467,7 +467,7 @@ No embedded fonts — Obsidian Appearance / system.
 
     /* Emphasis */
 
-    --bold-color: var(--aether-neon-pink);
+    --bold-color: var(--aether-neon-green);
 
     --bold-weight: 700;
 
@@ -477,10 +477,10 @@ No embedded fonts — Obsidian Appearance / system.
 
     --h1-color: var(--aether-neon-cyan);
     --h2-color: var(--aether-neon-blue);
-    --h3-color: var(--aether-neon-pink);
+    --h3-color: var(--aether-neon-green);
     --h4-color: var(--aether-neon-yellow);
-    --h5-color: var(--aether-neon-green);
-    --h6-color: var(--aether-neon-purple);
+    --h5-color: var(--aether-neon-purple);
+    --h6-color: var(--aether-neon-pink);
 
     /* Named colors — drive Obsidian syntax & UI chips */
 
@@ -503,10 +503,10 @@ No embedded fonts — Obsidian Appearance / system.
 
     /* Tags */
 
-    --tag-color: var(--aether-neon-pink);
-    --tag-background: rgba(var(--aether-neon-pink-rgb), 0.12);
-    --tag-background-hover: rgba(var(--aether-neon-pink-rgb), 0.20);
-    --tag-border-color: rgba(var(--aether-neon-pink-rgb), 0.35);
+    --tag-color: var(--aether-neon-cyan);
+    --tag-background: rgba(var(--aether-neon-cyan-rgb), 0.12);
+    --tag-background-hover: rgba(var(--aether-neon-cyan-rgb), 0.20);
+    --tag-border-color: rgba(var(--aether-neon-cyan-rgb), 0.35);
 
     /* Links */
 
@@ -995,7 +995,7 @@ h6 { color: var(--h6-color); }
 
 .theme-dark .tag {
 
-    text-shadow: 0 0 8px rgba(var(--aether-neon-pink-rgb), 0.35);
+    text-shadow: 0 0 8px rgba(var(--aether-neon-cyan-rgb), 0.35);
 
     box-shadow: 0 0 12px rgba(var(--aether-neon-pink-rgb), 0.10);
 
@@ -2649,12 +2649,28 @@ textarea:focus {
     color: var(--text-muted);
 }
 
-/* Toggles & Switches */
+/* Toggles & Switches — Neon Green Active State */
 .checkbox-container.is-enabled {
-    background-color: var(--aether-neon-cyan, #5CE1E6);
-    box-shadow: 0 0 10px rgba(92, 225, 230, 0.4);
+    background-color: var(--aether-neon-green, #6EF2A8) !important;
+    box-shadow: 0 0 10px rgba(110, 242, 168, 0.4) !important;
 }
 
 .checkbox-container.is-enabled .checkbox-icon {
-    background-color: #0C0E14;
+    background-color: #0C0E14 !important;
+}
+
+/* Inline Code — Cyan Glow */
+code,
+.cm-inline-code {
+    color: var(--aether-neon-cyan, #5CE1E6) !important;
+    background-color: rgba(var(--aether-neon-cyan-rgb, 92, 225, 230), 0.12) !important;
+    border-radius: 4px !important;
+    padding: 2px 6px !important;
+}
+
+/* Checkboxes — Neon Green */
+input[type="checkbox"]:checked,
+.task-list-item-checkbox:checked {
+    background-color: var(--aether-neon-green, #6EF2A8) !important;
+    border-color: var(--aether-neon-green, #6EF2A8) !important;
 }

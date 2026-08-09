@@ -2,12 +2,14 @@
 
 A sleek, modern dark theme for [Obsidian](https://obsidian.md).
 
+![Neon Night Screenshot](screenshot.png)
+
 ## Features
 
 - **Material Identity**: Deep night stone background (`#0C0E14`) paired with soft neon tube highlights.
-- **Neon Spectrum**: Vibrant first-wave pink-blue neon accent hierarchy (blue, cyan, green, yellow, pink, red, purple, orange).
+- **Harmonic Palette**: Multi-neon color distribution featuring vibrant Cyan (`#5CE1E6`), Neon Green (`#6EF2A8`), Neon Blue (`#6EC8FF`), and Neon Pink (`#FF8EC8`).
 - **Clean Typography**: Unset font overrides — inherits cleanly from Obsidian Appearance settings.
-- **Native Look & Feel**: Fully styled workspace, docks, file explorer, tabs, ribbon, and callouts.
+- **Native Look & Feel**: Fully styled workspace, docks, file explorer, tabs, ribbon, callouts, and settings.
 
 ## Installation
 
