@@ -2802,6 +2802,7 @@ mark,
 
 
 
+
 /* --- AGGRESSIVE LIST BULLET OVERRIDES --- */
 body {
     --list-bullet-color: var(--aether-neon-cyan);
@@ -2809,9 +2810,20 @@ body {
     
     --aether-neon-mint: #65E9C7;
     --aether-neon-mint-rgb: 101, 233, 199;
+
+    --italic-color: #afff14 !important;
+    --italic-color-rgb: 175, 255, 20;
+}
+
+/* Italic overrides */
+.theme-dark .markdown-rendered em,
+.theme-dark .markdown-source-view.mod-cm6 .cm-em {
+    color: var(--italic-color) !important;
+    text-shadow: 0 0 8px rgba(var(--italic-color-rgb), 0.7), 0 0 16px rgba(var(--italic-color-rgb), 0.4) !important;
 }
 
 /* Live Preview Unordered Lists */
+
 .theme-dark .cm-formatting-list-ul,
 .theme-dark span.cm-formatting-list.cm-formatting-list-ul,
 .theme-dark .cm-list-1 .list-bullet,
