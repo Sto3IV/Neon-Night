@@ -2683,11 +2683,11 @@ mark,
 .markdown-preview-view mark,
 .markdown-rendered mark,
 .cm-highlight {
-    background-color: rgba(255, 245, 150, 0.25) !important;
+    background-color: rgba(var(--aether-neon-yellow-rgb), 0.25) !important;
     color: #FFFFFF !important;
     padding: 1px 5px !important;
     border-radius: 4px !important;
-    box-shadow: 0 0 10px rgba(255, 245, 150, 0.4) !important;
+    box-shadow: 0 0 10px rgba(var(--aether-neon-yellow-rgb), 0.4) !important;
 }
 
 
