@@ -471,7 +471,7 @@ No embedded fonts — Obsidian Appearance / system.
 
     --bold-weight: 700;
 
-    --italic-color: var(--aether-neon-cyan);
+    --italic-color: var(--aether-neon-green);
 
     /* Heading spectrum */
 
@@ -2668,9 +2668,11 @@ code,
     padding: 2px 6px !important;
 }
 
-/* Checkboxes — Neon Green */
+/* Checkboxes [x] & Toggles — Neon Blue (#6EC8FF) */
 input[type="checkbox"]:checked,
-.task-list-item-checkbox:checked {
-    background-color: var(--aether-neon-green, #6EF2A8) !important;
-    border-color: var(--aether-neon-green, #6EF2A8) !important;
+.task-list-item-checkbox:checked,
+.checkbox-container.is-enabled {
+    background-color: var(--aether-neon-blue, #6EC8FF) !important;
+    border-color: var(--aether-neon-blue, #6EC8FF) !important;
+    box-shadow: 0 0 10px rgba(110, 200, 255, 0.4) !important;
 }
