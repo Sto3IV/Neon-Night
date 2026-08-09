@@ -2518,53 +2518,68 @@ No !important.
 05 — BUTTONS, INPUTS, DROPDOWNS & MODALS (NEON NIGHT)
 =====================================================*/
 
-/* Buttons & Select Dropdowns */
+/* Buttons */
 button,
-.btn,
-select,
-.dropdown {
-    background-color: var(--interactive-normal) !important;
-    border: 1px solid var(--background-modifier-border) !important;
-    color: var(--text-normal) !important;
-    border-radius: var(--aether-radius-sm, 8px) !important;
-    padding: 6px 14px !important;
-    font-size: 13px !important;
-    font-weight: 500 !important;
-    cursor: pointer !important;
-    transition: all var(--aether-transition, 180ms ease) !important;
+.btn {
+    background-color: var(--interactive-normal);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-normal);
+    border-radius: var(--aether-radius-sm, 8px);
+    transition: background-color var(--aether-transition, 180ms ease), border-color var(--aether-transition, 180ms ease), box-shadow var(--aether-transition, 180ms ease);
 }
 
 button:hover,
-.btn:hover,
-select:hover,
-.dropdown:hover {
-    background-color: var(--interactive-hover) !important;
-    border-color: var(--background-modifier-border-hover) !important;
-    color: var(--text-bright, var(--text-normal)) !important;
+.btn:hover {
+    background-color: var(--interactive-hover);
+    border-color: var(--background-modifier-border-hover);
+    color: var(--text-bright, var(--text-normal));
 }
 
-button:focus-visible,
+button:focus-visible {
+    outline: none;
+    border-color: var(--aether-neon-cyan, #5CE1E6);
+    box-shadow: 0 0 0 2px rgba(92, 225, 230, 0.25);
+}
+
+/* Dropdown Selects — Preserve right padding for Obsidian double-arrow icon */
+select,
+.dropdown {
+    background-color: var(--interactive-normal);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-normal);
+    border-radius: var(--aether-radius-sm, 8px);
+    padding-right: 28px !important; /* Critical: prevents text from overlapping arrow */
+    transition: background-color var(--aether-transition, 180ms ease), border-color var(--aether-transition, 180ms ease);
+}
+
+select:hover,
+.dropdown:hover {
+    background-color: var(--interactive-hover);
+    border-color: var(--background-modifier-border-hover);
+    color: var(--text-bright, var(--text-normal));
+}
+
 select:focus-visible,
 .dropdown:focus-visible {
-    outline: none !important;
-    border-color: var(--aether-neon-cyan, #5CE1E6) !important;
-    box-shadow: 0 0 0 2px rgba(92, 225, 230, 0.25) !important;
+    outline: none;
+    border-color: var(--aether-neon-cyan, #5CE1E6);
+    box-shadow: 0 0 0 2px rgba(92, 225, 230, 0.25);
 }
 
 /* Call-to-Action / Primary Buttons */
 button.mod-cta,
 .btn.mod-cta,
 .setting-item-control button.mod-cta {
-    background-color: var(--interactive-accent) !important;
-    color: var(--text-on-accent, #0C0E14) !important;
-    border-color: transparent !important;
-    font-weight: 600 !important;
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent, #0C0E14);
+    border-color: transparent;
+    font-weight: 600;
 }
 
 button.mod-cta:hover,
 .btn.mod-cta:hover {
-    background-color: var(--interactive-accent-hover) !important;
-    box-shadow: 0 0 14px rgba(110, 200, 255, 0.45) !important;
+    background-color: var(--interactive-accent-hover);
+    box-shadow: 0 0 14px rgba(110, 200, 255, 0.45);
 }
 
 /* Text & Search Inputs */
@@ -2574,97 +2589,72 @@ input[type="password"],
 input[type="number"],
 input[type="email"],
 textarea {
-    background-color: var(--background-modifier-form-field) !important;
-    border: 1px solid var(--background-modifier-border) !important;
-    color: var(--text-normal) !important;
-    border-radius: var(--aether-radius-sm, 8px) !important;
-    padding: 6px 12px !important;
-    transition: all var(--aether-transition, 180ms ease) !important;
+    background-color: var(--background-modifier-form-field);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-normal);
+    border-radius: var(--aether-radius-sm, 8px);
+    transition: border-color var(--aether-transition, 180ms ease), box-shadow var(--aether-transition, 180ms ease);
 }
 
 input[type="text"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-    border-color: var(--aether-neon-cyan, #5CE1E6) !important;
-    background-color: var(--background-modifier-form-field-highlighted) !important;
-    box-shadow: 0 0 10px rgba(92, 225, 230, 0.3) !important;
-    outline: none !important;
+    border-color: var(--aether-neon-cyan, #5CE1E6);
+    background-color: var(--background-modifier-form-field-highlighted);
+    box-shadow: 0 0 8px rgba(92, 225, 230, 0.3);
+    outline: none;
 }
 
-/* Settings Modal & Dialogs */
+/* Modals & Dialogs */
 .modal {
-    background-color: var(--modal-background) !important;
-    border: 1px solid var(--background-modifier-border) !important;
-    border-radius: var(--aether-radius-lg, 16px) !important;
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5) !important;
+    background-color: var(--modal-background);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--aether-radius-lg, 16px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
 }
 
 .modal-close-button {
-    color: var(--text-muted) !important;
-    transition: color 150ms ease !important;
+    color: var(--text-muted);
+    transition: color 150ms ease;
 }
 
 .modal-close-button:hover {
-    color: var(--aether-neon-pink, #FF8EC8) !important;
+    color: var(--aether-neon-pink, #FF8EC8);
 }
 
 /* Vertical Tabs in Settings */
 .vertical-tab-header {
-    background-color: var(--aether-background-tertiary, #161A22) !important;
-    border-right: 1px solid var(--background-modifier-border) !important;
-}
-
-.vertical-tab-nav-item {
-    color: var(--text-muted) !important;
-    border-radius: var(--aether-radius-sm, 8px) !important;
-    margin: 2px 8px !important;
-    padding: 6px 12px !important;
-    transition: all 150ms ease !important;
-}
-
-.vertical-tab-nav-item:hover {
-    background-color: var(--interactive-hover) !important;
-    color: var(--text-normal) !important;
+    background-color: var(--aether-background-tertiary, #161A22);
+    border-right: 1px solid var(--background-modifier-border);
 }
 
 .vertical-tab-nav-item.is-active {
-    background-color: var(--aether-surface-raised, #222734) !important;
-    color: var(--aether-neon-blue, #6EC8FF) !important;
-    font-weight: 600 !important;
+    background-color: var(--aether-surface-raised, #222734);
+    color: var(--aether-neon-blue, #6EC8FF);
+    font-weight: 600;
 }
 
 /* Setting Items */
-.setting-item {
-    border-bottom: 1px solid var(--aether-border-soft, #252A36) !important;
-    padding: 18px 0 !important;
-}
-
 .setting-item-heading {
-    color: var(--aether-neon-cyan, #5CE1E6) !important;
-    font-weight: 600 !important;
+    color: var(--aether-neon-cyan, #5CE1E6);
+    font-weight: 600;
 }
 
 .setting-item-name {
-    color: var(--text-bright, var(--text-normal)) !important;
-    font-weight: 500 !important;
+    color: var(--text-bright, var(--text-normal));
+    font-weight: 500;
 }
 
 .setting-item-description {
-    color: var(--text-muted) !important;
+    color: var(--text-muted);
 }
 
 /* Toggles & Switches */
-.checkbox-container {
-    background-color: var(--interactive-normal) !important;
-    border: 1px solid var(--background-modifier-border) !important;
-    border-radius: 18px !important;
-}
-
 .checkbox-container.is-enabled {
-    background-color: var(--aether-neon-cyan, #5CE1E6) !important;
-    box-shadow: 0 0 10px rgba(92, 225, 230, 0.4) !important;
+    background-color: var(--aether-neon-cyan, #5CE1E6);
+    box-shadow: 0 0 10px rgba(92, 225, 230, 0.4);
 }
 
 .checkbox-container.is-enabled .checkbox-icon {
-    background-color: #0C0E14 !important;
+    background-color: #0C0E14;
 }
