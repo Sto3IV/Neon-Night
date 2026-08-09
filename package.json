@@ -1,7 +1,9 @@
 {
-    "name": "sample-obsidian-theme",
-    "version": "1.0.0",
+	"name": "neon-night",
+	"version": "1.0.0",
 	"scripts": {
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
-	}
+	},
+	"description": "Neon Night theme for Obsidian",
+	"author": "Sto3IV"
 }
