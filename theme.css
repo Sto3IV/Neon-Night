@@ -1248,12 +1248,12 @@ h6 { color: var(--h6-color); }
 
 .theme-dark .markdown-preview-view h2,
 .theme-dark .cm-header-2 {
-    text-shadow: 0 0 10px rgba(var(--aether-neon-blue-rgb), 0.38), 0 0 26px rgba(var(--aether-neon-blue-rgb), 0.16);
+    text-shadow: 0 0 10px rgba(70, 153, 251, 0.38), 0 0 26px rgba(70, 153, 251, 0.16);
 }
 
 .theme-dark .markdown-preview-view h3,
 .theme-dark .cm-header-3 {
-    text-shadow: 0 0 10px rgba(var(--aether-neon-pink-rgb), 0.38), 0 0 24px rgba(var(--aether-neon-pink-rgb), 0.16);
+    text-shadow: 0 0 10px rgba(128, 191, 255, 0.38), 0 0 24px rgba(128, 191, 255, 0.16);
 }
 
 .theme-dark .markdown-preview-view h4,
@@ -2688,4 +2688,89 @@ mark,
     padding: 1px 5px !important;
     border-radius: 4px !important;
     box-shadow: 0 0 8px rgba(255, 230, 0, 0.3) !important;
+}
+
+
+/*=====================================================
+  BUTTON OVERRIDES (High Specificity)
+=====================================================*/
+.theme-dark button:not(.clickable-icon):not(.mod-cta):not(.mod-warning):not(.mod-destructive),
+.theme-dark input[type="button"]:not(.mod-cta),
+.theme-dark input[type="reset"]:not(.mod-cta) {
+    background-color: var(--aether-surface-raised, #222734);
+    color: var(--aether-text, #C7D0E5);
+    border: 1px solid var(--aether-border, rgba(92, 225, 230, 0.25));
+    border-radius: var(--aether-radius-sm, 6px);
+    transition: all 0.2s ease;
+}
+
+.theme-dark button:not(.clickable-icon):not(.mod-cta):not(.mod-warning):not(.mod-destructive):hover,
+.theme-dark input[type="button"]:not(.mod-cta):hover,
+.theme-dark input[type="reset"]:not(.mod-cta):hover {
+    background-color: var(--aether-surface-hover, #2A3140);
+    border-color: rgba(var(--aether-neon-cyan-rgb), 0.6);
+    box-shadow: 0 0 8px rgba(var(--aether-neon-cyan-rgb), 0.25);
+    color: var(--aether-text-bright, #fff);
+    cursor: pointer;
+}
+
+/* Primary CTA Buttons */
+.theme-dark button.mod-cta,
+.theme-dark input[type="submit"].mod-cta {
+    background-color: rgba(var(--aether-neon-blue-rgb), 0.15);
+    color: rgb(var(--aether-neon-blue-rgb));
+    border: 1px solid rgba(var(--aether-neon-blue-rgb), 0.4);
+    border-radius: var(--aether-radius-sm, 6px);
+    text-shadow: 0 0 8px rgba(var(--aether-neon-blue-rgb), 0.4);
+    transition: all 0.2s ease;
+}
+
+.theme-dark button.mod-cta:hover,
+.theme-dark input[type="submit"].mod-cta:hover {
+    background-color: rgba(var(--aether-neon-blue-rgb), 0.25);
+    border-color: rgba(var(--aether-neon-blue-rgb), 0.8);
+    box-shadow: 0 0 12px rgba(var(--aether-neon-blue-rgb), 0.4);
+    color: #fff;
+    text-shadow: 0 0 12px rgba(var(--aether-neon-blue-rgb), 0.8);
+    cursor: pointer;
+}
+
+/* Modals & Dropdowns background to ensure no #333333 */
+.theme-dark .modal,
+.theme-dark .menu,
+.theme-dark .suggestion-container {
+    background-color: var(--aether-background, #0C0E14);
+    border: 1px solid var(--aether-border, rgba(92, 225, 230, 0.25));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 10px rgba(var(--aether-neon-cyan-rgb), 0.1);
+}
+
+
+/*=====================================================
+  INPUT FIELDS & DROPDOWNS OVERRIDES
+=====================================================*/
+.theme-dark input[type="text"],
+.theme-dark input[type="search"],
+.theme-dark input[type="password"],
+.theme-dark input[type="email"],
+.theme-dark input[type="number"],
+.theme-dark textarea,
+.theme-dark select {
+    background-color: var(--aether-surface-raised, #222734);
+    color: var(--aether-text-bright, #fff);
+    border: 1px solid var(--aether-border, rgba(92, 225, 230, 0.25));
+    border-radius: var(--aether-radius-sm, 6px);
+    transition: all 0.2s ease;
+}
+
+.theme-dark input[type="text"]:focus,
+.theme-dark input[type="search"]:focus,
+.theme-dark input[type="password"]:focus,
+.theme-dark input[type="email"]:focus,
+.theme-dark input[type="number"]:focus,
+.theme-dark textarea:focus,
+.theme-dark select:focus {
+    background-color: var(--aether-surface-active, #323A4C);
+    border-color: rgba(var(--aether-neon-cyan-rgb), 0.8);
+    box-shadow: 0 0 10px rgba(var(--aether-neon-cyan-rgb), 0.3);
+    outline: none;
 }
