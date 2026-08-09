@@ -475,9 +475,9 @@ No embedded fonts — Obsidian Appearance / system.
 
     /* Heading spectrum */
 
-    --h1-color: var(--aether-neon-cyan);
-    --h2-color: var(--aether-neon-blue);
-    --h3-color: var(--aether-neon-green);
+    --h1-color: #5CE1E6;
+    --h2-color: #4699FB;
+    --h3-color: #80BFFF;
     --h4-color: var(--aether-neon-yellow);
     --h5-color: var(--aether-neon-purple);
     --h6-color: var(--aether-neon-pink);
@@ -2675,4 +2675,17 @@ input[type="checkbox"]:checked,
     background-color: var(--aether-neon-blue, #6EC8FF) !important;
     border-color: var(--aether-neon-blue, #6EC8FF) !important;
     box-shadow: 0 0 10px rgba(110, 200, 255, 0.4) !important;
+}
+
+
+/* Highlight (==text== / <mark>) */
+mark,
+.markdown-preview-view mark,
+.markdown-rendered mark,
+.cm-highlight {
+    background-color: rgba(255, 230, 0, 0.25) !important;
+    color: #FFFFFF !important;
+    padding: 1px 5px !important;
+    border-radius: 4px !important;
+    box-shadow: 0 0 8px rgba(255, 230, 0, 0.3) !important;
 }
