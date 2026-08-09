@@ -2800,6 +2800,7 @@ mark,
 }
 
 
+
 /* --- AGGRESSIVE LIST BULLET OVERRIDES --- */
 body {
     --list-bullet-color: var(--aether-neon-cyan);
@@ -2808,7 +2809,9 @@ body {
 
 /* Live Preview */
 .theme-dark .cm-formatting-list-ul,
+.theme-dark .cm-formatting-list-ol,
 .theme-dark span.cm-formatting-list.cm-formatting-list-ul,
+.theme-dark span.cm-formatting-list.cm-formatting-list-ol,
 .theme-dark .cm-list-1 .list-bullet,
 .theme-dark .cm-list-2 .list-bullet,
 .theme-dark .cm-list-3 .list-bullet {
@@ -2817,7 +2820,8 @@ body {
 }
 
 /* Reading View */
-.theme-dark .markdown-rendered ul > li::marker {
+.theme-dark .markdown-rendered ul > li::marker,
+.theme-dark .markdown-rendered ol > li::marker {
     color: var(--aether-neon-cyan) !important;
     text-shadow: 0 0 8px rgba(var(--aether-neon-cyan-rgb), 0.7), 0 0 16px rgba(var(--aether-neon-cyan-rgb), 0.4) !important;
 }
