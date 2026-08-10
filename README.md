@@ -39,16 +39,14 @@ Below is a structural test of the Markdown capabilities supported by the Neon Ni
 
 The cold, clear night requires precise syntax. Here is how you might configure a system:
 
-```python
-def optimize_memory(text_block):
-    """
+<pre><code><span style="color: #5CE1E6">def</span> <span style="color: #6EF2A8">optimize_memory</span>(<span style="color: #6EF2A8">text_block</span>):
+    <span style="color: #AFFF14">"""
     Applies structural signaling to reduce cognitive load.
-    """
-    signals = ["==highlight==", "*emphasis*"]
-    if any(s in text_block for s in signals):
-        return "Encoding enhanced."
-    return "Monolith detected."
-```
+    """</span>
+    <span style="color: #6EF2A8">signals</span> = [<span style="color: #FFD866">"==highlight=="</span>, <span style="color: #FFD866">"*emphasis*"</span>]
+    <span style="color: #5CE1E6">if</span> <span style="color: #5CE1E6">any</span>(<span style="color: #6EF2A8">s</span> <span style="color: #5CE1E6">in</span> <span style="color: #6EF2A8">text_block</span> <span style="color: #5CE1E6">for</span> <span style="color: #6EF2A8">s</span> <span style="color: #5CE1E6">in</span> <span style="color: #6EF2A8">signals</span>):
+        <span style="color: #5CE1E6">return</span> <span style="color: #FFD866">"Encoding enhanced."</span>
+    <span style="color: #5CE1E6">return</span> <span style="color: #FFD866">"Monolith detected."</span></code></pre>
 
 ## 4. Installation
 
