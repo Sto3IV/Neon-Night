@@ -1,7 +1,5 @@
-![Neon Night](screenshot.png)
-
 # Neon Night: A Cognitive Architecture
-
+![Neon Night](screenshot.png)
 > "The true power of an interface is not measured by its beauty, but by its ability to sever the user from cognitive fatigue."
 
 **Neon Night** is not merely an Obsidian theme. It is a rigorously engineered visual framework designed to optimize information encoding, reduce extraneous cognitive load, and enhance memory performance through structural color-coding. 
