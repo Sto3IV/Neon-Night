@@ -1,3 +1,5 @@
+![Neon Night](screenshot.png)
+
 # Neon Night: A Cognitive Architecture
 
 > "The true power of an interface is not measured by its beauty, but by its ability to sever the user from cognitive fatigue."
